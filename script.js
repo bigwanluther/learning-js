@@ -277,57 +277,279 @@
 
 // [2,4,6,8,10,12] look through the array while looking be multiplying each number by 3
 
-let numbers = [2, 4, 6, 8, 10, 12];
+// let numbers = [2, 4, 6, 8, 10, 12];
 
-for (let i = 0; i < numbers.length; i++) {
-    numbers[i] *= 3;
-}
-console.log(numbers);
-
-
-// factoria of 10!=10*9*8*7*6*5*4*3*2*1 using loop.
-// using for
-let num = 10;
-let factorial = 1;
-
-for (let i = num; i >= 1; i--) {
-    factorial *= i;
-}
-
-console.log(` using for loop=Factorial of ${num} is: ${factorial}`);
+// for (let i = 0; i <numbers.length; i++) {
+//     numbers[i] *= 3;
+// }
+// console.log(numbers);
 
 
-// using while
-let numb = 10;
-let factoriall = 1;
-let i = num;
+// // factoria of 10!=10*9*8*7*6*5*4*3*2*1 using loop.
+// // using for
+// let num = 10;
+// let factorial = 1;
 
-while (i > 0) {
-    factoriall *= i;
-    i--;
-}
+// for (let i = num; i > 1; i--) {
+//     factorial *= i;
+// }
 
-console.log(` using while loop =Factorial of ${numb} is: ${factoriall}`); // Output: 3628800
-
-// print two different arrays of 100 finding the odd number for the other array and even numbers for the other array.
-
-let oddNumbers = [];
-
-for (let i = 1; i <= 100; i++) {
-    if (i % 2 !== 0) {
-        oddNumbers.push(i);
-    }
-}
-
-console.log("Odd Numbers:", oddNumbers);
+// console.log(` using for loop=Factorial of ${num} is: ${factorial}`);
 
 
-let evenNumbers = [];
+// // using while
+// let numb = 10;
+// let factoriall = 1;
+// let i = num;
 
-for (let i = 1; i <= 100; i++) {
-    if (i % 2 === 0) {
-        evenNumbers.push(i);
-    }
-}
+// while (i > 0) {
+//     factoriall *= i;
+//     i--;
+// }
 
-console.log("Even Numbers:", evenNumbers);
+// console.log(` using while loop =Factorial of ${numb} is: ${factoriall}`); // Output: 3628800
+
+// // print two different arrays of 100 finding the odd number for the other array and even numbers for the other array.
+
+// let oddNumbers = [];
+
+// for (let i = 1; i <= 100; i++) {
+//     if (i % 2 !== 0) {
+//         oddNumbers.push(i);
+//     }
+// }
+
+// console.log("Odd Numbers:", oddNumbers);
+
+
+// let evenNumbers = [];
+
+// for (let i = 1; i <= 100; i++) {
+//     if (i % 2 === 0) {
+//         evenNumbers.push(i);
+//     }
+// }
+
+// console.log("Even Numbers:", evenNumbers);
+
+// let number=100;
+
+
+// for(let i=0;i<=number;i++){
+//     if (i%3==0 && i%5==0){
+//         console.log(i,'fizzbuzz')
+//     }else if(i%3==0){
+//         console.log(i,'fizz')
+//     }else if(i%5==0){
+//         console.log(i,'buzz')
+//     }
+// }
+
+// let students=[
+//     "luther",
+//     "peter",
+//     "james",
+//     "kachi"
+// ]
+
+// for(let i =0;i<students.length;i++){
+//     console.log(`welcome to blockfuse  labs ${students[i]}`);
+// }
+
+
+// let i=0;
+// while(i<=10) {
+//     if(i==2){
+//         continue
+//     }else {
+//         console.log(i)
+//     }
+//     i++
+// }
+
+
+// <--fibonacci sequence of 50-->
+
+// let fibonacci =[]
+// let f=50
+
+// for(let i = 0; i < f; i++){
+//     if (i==0){
+//         fibonacci.push(0)
+//     }else if (i==1){
+//         fibonacci.push(1)
+//     }else{
+//         let nextnumber=fibonacci[i-1]+fibonacci [i-2]
+//         fibonacci.push(nextnumber)
+//     }
+// }
+// console.log('Fibonacci of 50 =', fibonacci);
+
+// // <--implement a grading system.90-100-a,80-89-b,70-79-c,60-69-d,below 60-f.using java script-->
+
+// let score =80
+// let grade=0
+
+// if(score >= 90 && score <= 100){
+//     grade = "A"
+// }else if (score>=80 && score<=89){
+//     grade = "B"
+// }else if (score>=70 && score<=79){
+//     grade = "C"
+// }else if (score>=60 && score<=69){
+//     grade = "D"
+// }else{
+//     grade = "F"
+// }
+// console.log("Grade is =",grade);
+
+//Write a function that is going to accept any letter of the 26 alphabets, which is going to return true if it’s a vowel and false if it’s not a vowel!!!!!!!!!!!!!!
+
+// function vowel(Enter_english_letter){
+//     let lowerCaseLetter=Enter_english_letter.toLowerCase();
+//     if (lowerCaseLetter=='a' || lowerCaseLetter=='e' || lowerCaseLetter=='i' || lowerCaseLetter=='0' || lowerCaseLetter=='u') {
+//         return true;
+//     }
+//     return false;
+// }
+// console.log("assignment 1=",vowel('z'))
+
+// // calculate the average of the number
+
+// function calculateAverage(numbers){
+//     return numbers.reduce((a,b)=>a+b,0)/(numbers.length);
+// }
+// let numbers=[1,2,3,4,5]
+// console.log('assignment 2=',calculateAverage(numbers));
+
+// // //write a function that recieve a string as and input
+
+// let string="luther"
+// returns =[];
+
+// function checkVowels(string){
+//     for(let i =0;i<string.length;i++){
+//         console.log(string)
+        
+//     }
+// }
+// console.log(string)
+
+
+// // nested loops
+// for (let i=1; i < 7;i++ ){
+//     for (let  j=1; j < 7;j++ ){
+//         console.log(i)
+//         console.log('congratulations bigwan luther your flight was successful"welcome to bahamas"')
+//     }
+//  }
+// do while loops
+// let i = 0;
+// do {
+//     console.log(i);
+//     i++;
+// } while (i < 5);
+
+// let studentsDb = [
+//     {
+//         name: "Sule",
+//         age: 22,
+//         gender: "m",
+//         course: "maths",
+//         id:1
+//     },
+//     {
+//         name: "Chidinma",
+//         age: 26,
+//         gender: "f",
+//         course: "psychology",
+//         id:2
+//     },
+//     {
+//         name: "Janet",
+//         age: 24,
+//         gender: "f",
+//         course: "psychology",
+//         id:3
+//     },
+//     {
+//         name: "Ojetola",
+//         age: 19,
+//         gender: "m",
+//         course: "psychology",
+//         id:4
+//     }
+// ]
+
+// let maths = []
+// let psychology = []
+
+// function alloDept(arrStu){
+//     for (let student in arrStu){
+//         if (arrStu[student].course === "maths"){
+//             maths.push(arrStu[student])
+//         } else if(arrStu[student].course === "psychology") {
+//             psychology.push(arrStu[student])
+//         }
+//     }
+//     console.log("Maths Department:", maths);
+//     console.log("Psychology Department:", psychology);
+// }
+
+// alloDept(studentsDb)
+
+// // create a new student and add them to the data base.
+
+// function newStudent(name,age,gender,course){
+//     let id=studentsDb.length +1
+//     let student={
+//         name:name,
+//         age:age,
+//         gender:gender,
+//         course:course,
+//         id:id
+//     }
+        
+//     studentsDb.push(student)
+// }
+// newStudent("luther",23,"m","art")
+// console.log("after adding new student",studentsDb)
+
+// // update a student data id
+
+// function updatestudentId(id){
+//     for (student in studentsDb){
+//         if (studentsDb[student].id==id){
+//             studentsDb[student]
+//         }
+//     }console.log(studentsDb)
+//     studentsDb.push(student)
+// }
+
+// // delete student
+
+// function deletestudent(name,age,gender,course){
+//     let student={
+//         name:name,
+//         age:age,
+//         gender:gender,
+//         course:course,
+//         id:id
+//     }
+        
+//     studentsDb.pop(student)
+// }
+
+//  Task Two
+
+// Movie Watchlist Manager
+
+// Each movie should have: id, title, genre, year, watched (boolean)
+
+// Features:
+
+// Add a movie
+// Mark as watched/unwatched
+// List by genre or watched status
+// Delete movie
+// Sort by year or title
