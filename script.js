@@ -527,29 +527,72 @@
 // }
 
 // // delete student
+// studentsDb.splice(1,2);
+// console.log("after deleting",studentsDb);
 
-// function deletestudent(name,age,gender,course){
-//     let student={
-//         name:name,
-//         age:age,
-//         gender:gender,
-//         course:course,
-//         id:id
-//     }
-        
-//     studentsDb.pop(student)
+// let obj1={name:"luther"}
+// let obj2={track:"web2"}
+// let obj3={age:"24"}
+
+// Object.assign(obj1,obj2,obj3)
+// // console.log(obj1)
+
+// let obj4=Object.create(obj1)
+// obj4.name="bigwan"
+// console.log(obj4);
+
+// let obj2 = {track:"web2"}
+// let obj3 = {mode:"game"}
+// Object.assign(obj3, obj2, obj1)
+// let obj4 = Object.create(obj2)
+// console.log("track" in obj4);
+
+// let obj1 = {name:"test", class:"web2", age:30}
+// let keys = Object.keys(obj1)
+
+// if(keys.includes("name")){
+//     console.log(obj1.name)
 // }
 
-//  Task Two
+// let obj1 = {
+//     user: ["test", "user", "another", "user"],
+//     fruit:["mago", "orange", "apple", "guava"],
+//     animals:["lion", "elephant", "tiger"],
+//     cars:["benz", "lambo","BMW" ]
+// }
 
-// Movie Watchlist Manager
+// let keys = Object.keys(obj1)
 
-// Each movie should have: id, title, genre, year, watched (boolean)
+// if(keys.includes("cars")){
+//     console.log(obj1.cars)
+// }else{
+//     console.log("cars does not exist")
+// }
 
-// Features:
 
-// Add a movie
-// Mark as watched/unwatched
-// List by genre or watched status
-// Delete movie
-// Sort by year or title
+// let obj1={name:"test",class:"web2",age:24}
+// Object.freeze(obj1)
+// obj1.class="web3"
+// console.log(obj1);
+
+
+// 1. Given two user profile objects (e.g., personalInfo and contactInfo), merge them into a single userProfile object.
+let userPersonalinfo ={name:"luther",age:"24",class:"web2",gender:"m"}
+let contactInfo ={contact:+333,address:"jos",state:"plateau state"}
+Object.assign(userPersonalinfo,contactInfo)
+console.log("first",userPersonalinfo);
+
+// 2. Given a product object, log all its keys and values. Bonus: Format them as "key: value" pairs in an array or print them line by line.
+let product={
+    
+}
+// 3. Create a settings object (e.g., theme: "dark", notifications: true). Freeze it and try changing a value. Use Object.isFrozen to confirm if it's immutable.
+
+let obj1={theme:"dark",notification:true}
+Object.freeze(obj1)
+obj1.class="light"
+console.log("third ",obj1);
+Object.isFrozen(obj1)
+console.log("isfrozen",obj1);
+
+
